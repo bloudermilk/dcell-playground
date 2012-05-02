@@ -3,10 +3,7 @@ Bundler.require
 
 DCell.start({
   id: "time_node",
-  addr: "tcp://127.0.0.1:8001",
-  registry: {
-    adapter: "redis"
-  }
+  addr: "tcp://127.0.0.1:8001"
 })
 
 class TimeServer
