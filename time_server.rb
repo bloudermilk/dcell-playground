@@ -3,7 +3,11 @@ Bundler.require
 
 DCell.start({
   id: "time_node",
-  addr: "tcp://127.0.0.1:8001"
+  addr: "tcp://127.0.0.1:8001",
+  directory: {
+    id: "explorer_node",
+    addr: "tcp://127.0.0.1:8000"
+  }
 })
 
 class TimeServer
